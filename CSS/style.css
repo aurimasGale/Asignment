@@ -7,6 +7,23 @@ body {
 .gray {
   color: #999999;
 }
+.colored-text {
+  height: 19px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ff3998;
+}
+.small-text {
+  font-size: 14px;
+  color: grey;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  font-weight: 300;
+  line-height: 1.5;
+}
 nav {
   display: flex;
   flex-direction: row;
@@ -15,7 +32,7 @@ nav {
 }
 .nav-buttons {
   display: flex;
-  gap: 20px;
+  gap: 35px;
 }
 .nav-btn {
   text-decoration: none;
@@ -34,26 +51,14 @@ nav {
 .hamburger-btn:hover {
   color: #ff3998;
 }
-.nft-logo {
-  width: 140px;
-  height: 36px;
-}
 
-.colored-text {
-  height: 19px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 10px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #ff3998;
-}
 .sign-up-btn {
-  padding: 10px 25px;
+  font-size: 20px;
+  padding: 15px 40px;
   border-radius: 30px;
   background-color: transparent;
-  border-color: #ff3998;
-  font-weight: 600;
+  border-color: #ff6141;
+  font-weight: 500;
 }
 .hero {
   display: flex;
@@ -70,24 +75,15 @@ nav {
   font-weight: 900;
   font-size: 55px;
 }
-
-.small-text {
-  font-size: 14px;
-  color: grey;
-  margin-top: 1em;
-  margin-bottom: 1.5em;
-  font-weight: 300;
-  line-height: 1.5;
-}
-
 .hero-image-part {
   width: 60%;
 }
 .hero-image-part__image {
-  width: 100%;
+  width: 60%;
+  position: fixed;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 430px) {
   body {
     padding: 1em;
   }
@@ -106,23 +102,25 @@ nav {
     position: relative;
   }
   .hero-text-part__main-text {
-    font-size: 35px;
+    margin-top: 1rem;
+    font-size: 48px;
   }
   .hero-text-part__small-text {
-    width: 96.5%;
+    width: 69%;
   }
   .hero-image-part {
     position: absolute;
-    max-width: 50%;
-    top: 10%;
-    left: 50%;
+    max-width: 100%;
+    top: 5%;
+    left: 52%;
     overflow: hidden;
   }
   .hero-image-part__image {
-    width: 300px;
+    width: 400px;
+    height: 360px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 430px) {
   body {
     padding: 3.5em;
   }

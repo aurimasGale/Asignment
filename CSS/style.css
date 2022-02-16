@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap");
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css);
+@import "reset.css";
+body {
+  font-family: inter;
+}
+.gray {
+  color: #999999;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+}
+.nav-btn {
+  text-decoration: none;
+  font-weight: 400;
+}
+.nav-btn__pink {
+  color: #ff3998;
+}
+.hamburger-btn {
+  border: none;
+  padding: 0;
+  font-size: 25px;
+  background-color: transparent;
+  display: none;
+}
+.hamburger-btn:hover {
+  color: #ff3998;
+}
+.nft-logo {
+  width: 140px;
+  height: 36px;
+}
+
+.colored-text {
+  /* position: absolute; */
+  height: 19px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #ff3998;
+}
+.sign-up-btn {
+  padding: 10px 25px;
+  border-radius: 30px;
+  background-color: transparent;
+  border-color: #ff3998;
+  font-weight: 600;
+}
+.hero {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3em;
+}
+
+.hero-text-part {
+  width: 40%;
+  height: auto;
+  margin-top: 4em;
+
+  /* position: relative; */
+}
+.hero-text-part__main-text {
+  font-weight: 900;
+  font-size: 55px;
+}
+
+.small-text {
+  font-size: 14px;
+  color: grey;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.hero-image-part {
+  width: 60%;
+  /* position: absolute;
+  top: 5%;
+  left: 44%; */
+}
+.hero-image-part__image {
+  width: 100%;
+}
+@media screen and (max-width: 720px) {
+  body {
+    padding: 1em;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .nav-buttons {
+    display: none;
+  }
+  .hamburger-btn {
+    display: block;
+  }
+  .hero {
+    display: block;
+  }
+  .hero-text-part {
+    width: 72%;
+    position: relative;
+  }
+  .hero-text-part__main-text {
+    font-size: 35px;
+  }
+  .hero-text-part__small-text {
+    width: 96.5%;
+  }
+  .hero-image-part {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+  }
+  .hero-image-part__image {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 720px) {
+  body {
+    padding: 3.5em;
+  }
+  .nft-logo {
+    width: 198px;
+  }
+}

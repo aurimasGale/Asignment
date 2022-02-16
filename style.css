@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css);
+body {
+  font-family: inter;
+}
+.gray {
+  color: #999999;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+}
+.nav-btn {
+  text-decoration: none;
+  font-weight: 400;
+}
+.nav-btn__pink {
+  color: hotpink;
+}
+.hamburger-btn {
+  border: none;
+  padding: 0;
+  font-size: 25px;
+  background-color: transparent;
+  display: none;
+}
+.nft-logo {
+  width: 140px;
+  height: 36px;
+}
+.hamburger-btn:hover {
+  color: hotpink;
+}
+@media screen and (max-width: 720px) {
+  body {
+    padding: 1em;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .nav-buttons {
+    display: none;
+  }
+  .hamburger-btn {
+    display: block;
+  }
+}
+@media screen and (min-width: 720px) {
+  body {
+    padding: 3.5em;
+  }
+}

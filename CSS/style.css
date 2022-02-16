@@ -18,8 +18,8 @@ body {
   color: #ff3998;
 }
 .small-text {
-  font-size: 14px;
-  color: grey;
+  font-size: 20px;
+
   margin-top: 1em;
   margin-bottom: 1.5em;
   font-weight: 300;
@@ -57,10 +57,10 @@ nav {
 
 .sign-up-btn {
   font-size: 20px;
-  padding: 15px 40px;
+  padding: 15px 45px;
   border-radius: 30px;
   background-color: transparent;
-  border-color: #ff6141;
+  border: 3px solid #ff6141;
   font-weight: 500;
 }
 .hero {
@@ -69,16 +69,14 @@ nav {
 }
 
 .hero-text-part {
-  width: 72%;
+  width: 71%;
   position: relative;
 }
 .hero-text-part__main-text {
   margin-top: 1rem;
   font-size: 48px;
 }
-.hero-text-part__small-text {
-  width: 69%;
-}
+
 .hero-image-part {
   position: absolute;
   max-width: 100%;
@@ -90,7 +88,22 @@ nav {
   width: 400px;
   height: 360px;
 }
-
+/* Upsell */
+.upsell {
+  height: 320px;
+  position: relative;
+}
+.upsell-bg-img {
+  position: absolute;
+}
+.upsell-text-part {
+  height: inherit;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 64px;
+}
 @media screen and (min-width: 1140px) {
   body {
     padding: 70px 80px;
@@ -127,5 +140,8 @@ nav {
   .hero-image-part__image {
     height: 100%;
     width: 100%;
+  }
+  .upsell-text-part {
+    bottom: 10%;
   }
 }

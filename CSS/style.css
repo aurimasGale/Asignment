@@ -3,7 +3,9 @@
 @import "reset.css";
 body {
   font-family: inter;
-  padding: 1em;
+  /* padding: 1em; */
+  margin: 0;
+  overflow: hidden;
 }
 .gray {
   color: #999999;
@@ -57,53 +59,58 @@ nav {
 
 .sign-up-btn {
   font-size: 20px;
-  padding: 15px 45px;
-  border-radius: 30px;
+  padding: 20px 55px;
+  border-radius: 50px;
   background-color: transparent;
   border: 3px solid #ff6141;
   font-weight: 500;
+  margin-top: 20px;
 }
 .hero {
   display: block;
-  margin-top: 4em;
+  margin-top: 5em;
 }
 
 .hero-text-part {
-  width: 71%;
+  width: 74.5%;
   position: relative;
 }
 .hero-text-part__main-text {
-  margin-top: 1rem;
+  margin-top: 25px;
   font-size: 48px;
 }
 
 .hero-image-part {
   position: absolute;
   max-width: 100%;
-  top: 5%;
+  top: 70px;
   left: 52%;
   overflow: hidden;
 }
 .hero-image-part__image {
   width: 400px;
-  height: 360px;
 }
 /* Upsell */
 .upsell {
+  margin-top: 80px;
+  width: 100%;
   height: 320px;
   position: relative;
+  overflow: hidden;
 }
 .upsell-bg-img {
   position: absolute;
+  left: -20%;
 }
 .upsell-text-part {
-  height: inherit;
+  height: 100%;
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding-left: 64px;
+  padding-left: 30px;
 }
+
 @media screen and (min-width: 1140px) {
   body {
     padding: 70px 80px;
@@ -121,7 +128,7 @@ nav {
     margin-top: 100px;
   }
   .hero-text-part {
-    width: 50%;
+    width: 55%;
     height: auto;
     margin-top: 100px;
   }
@@ -138,10 +145,15 @@ nav {
   }
 
   .hero-image-part__image {
-    height: 100%;
-    width: 100%;
+    width: 750px;
+  }
+  .upsell {
+    margin-top: 0;
   }
   .upsell-text-part {
     bottom: 10%;
+  }
+  .upsell-bg-img {
+    left: 0;
   }
 }

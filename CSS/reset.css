@@ -12,3 +12,11 @@ h2 {
   font-weight: 400;
   font-style: normal;
 }
+header {
+  padding-top: 32px;
+}
+header,
+.hero {
+  padding-left: 32px;
+  padding-right: 32px;
+}

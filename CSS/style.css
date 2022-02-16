@@ -3,6 +3,7 @@
 @import "reset.css";
 body {
   font-family: inter;
+  padding: 1em;
 }
 .gray {
   color: #999999;
@@ -22,7 +23,7 @@ body {
   margin-top: 1em;
   margin-bottom: 1.5em;
   font-weight: 300;
-  line-height: 1.5;
+  line-height: 30px;
 }
 nav {
   display: flex;
@@ -31,12 +32,14 @@ nav {
   align-items: center;
 }
 .nav-buttons {
-  display: flex;
-  gap: 35px;
+  display: none;
 }
+
 .nav-btn {
+  font-size: 20px;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 300;
+  font-style: inherit;
 }
 .nav-btn__pink {
   color: #ff3998;
@@ -46,7 +49,7 @@ nav {
   padding: 0;
   font-size: 25px;
   background-color: transparent;
-  display: none;
+  display: block;
 }
 .hamburger-btn:hover {
   color: #ff3998;
@@ -61,70 +64,68 @@ nav {
   font-weight: 500;
 }
 .hero {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 3em;
+  display: block;
+  margin-top: 4em;
 }
 
 .hero-text-part {
-  width: 40%;
-  height: auto;
-  margin-top: 4em;
+  width: 72%;
+  position: relative;
 }
 .hero-text-part__main-text {
-  font-weight: 900;
-  font-size: 55px;
+  margin-top: 1rem;
+  font-size: 48px;
+}
+.hero-text-part__small-text {
+  width: 69%;
 }
 .hero-image-part {
-  width: 60%;
+  position: absolute;
+  max-width: 100%;
+  top: 5%;
+  left: 52%;
+  overflow: hidden;
 }
 .hero-image-part__image {
-  width: 60%;
-  position: fixed;
+  width: 400px;
+  height: 360px;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (min-width: 1140px) {
   body {
-    padding: 1em;
+    padding: 70px 80px;
   }
-
   .nav-buttons {
-    display: none;
+    display: flex;
+    gap: 35px;
   }
   .hamburger-btn {
-    display: block;
+    display: none;
   }
   .hero {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
   }
   .hero-text-part {
-    width: 72%;
-    position: relative;
+    width: 50%;
+    height: auto;
+    margin-top: 100px;
   }
   .hero-text-part__main-text {
-    margin-top: 1rem;
-    font-size: 48px;
+    font-weight: 900;
+    font-size: 100px;
   }
   .hero-text-part__small-text {
-    width: 69%;
+    font-size: 18px;
+    width: 85%;
   }
   .hero-image-part {
-    position: absolute;
-    max-width: 100%;
-    top: 5%;
-    left: 52%;
-    overflow: hidden;
+    position: static;
   }
+
   .hero-image-part__image {
-    width: 400px;
-    height: 360px;
-  }
-}
-@media screen and (min-width: 430px) {
-  body {
-    padding: 3.5em;
-  }
-  .nft-logo {
-    width: 198px;
+    height: 100%;
+    width: 100%;
   }
 }

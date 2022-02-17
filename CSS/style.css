@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap");
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css);
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
 @import "reset.css";
 body {
   font-family: inter;
@@ -12,6 +12,13 @@ body {
 }
 .gray-2 {
   color: #555555;
+}
+.small-text {
+  font-size: 20px;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  font-weight: 300;
+  line-height: 32px;
 }
 .smaller-text {
   font-size: 12px;
@@ -36,13 +43,7 @@ body {
   text-transform: uppercase;
   color: #ff3998;
 }
-.small-text {
-  font-size: 20px;
-  margin-top: 1em;
-  margin-bottom: 1.5em;
-  font-weight: 300;
-  line-height: 32px;
-}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -239,6 +240,15 @@ hr {
 }
 .footer-upsell-sign-up-btn {
   margin-top: 37px;
+}
+/* Footer */
+.social-icons {
+  display: flex;
+  gap: 13px;
+}
+.social-icon {
+  font-size: 18px;
+  color: #999999;
 }
 @media screen and (min-width: 1140px) {
   body {

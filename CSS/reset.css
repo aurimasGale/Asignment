@@ -18,6 +18,11 @@ h3 {
   font-style: normal;
   font-size: 20px;
 }
+h4 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
 header {
   padding-top: 32px;
 }
@@ -26,9 +31,13 @@ header,
 .press,
 .showcase-text-part,
 .upsell-text-part,
-.footer-upsell {
+.footer-upsell,
+footer {
   padding-left: 32px;
   padding-right: 32px;
+}
+footer {
+  padding-top: 70px;
 }
 .press {
   margin-top: 70px;

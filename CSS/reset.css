@@ -17,11 +17,12 @@ header {
 }
 header,
 .hero,
-.press {
+.press,
+.showcase {
   padding-left: 32px;
   padding-right: 32px;
 }
 .press {
-  margin-top: 130px;
-  margin-bottom: 130px;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }

@@ -113,13 +113,23 @@ nav {
 /* Press */
 .press {
   display: grid;
-  grid-template-columns: 50px 100px;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  overflow: hidden;
+  gap: 50px;
 }
 
-.no-show-press-logo {
+.press-logo__no-show {
   display: none;
+}
+.press-logo__boom {
+}
+.just-for-boom {
+  width: 138px;
+  overflow: hidden;
+}
+/* Showcase */
+.open-sea-button {
+  color: #111111;
 }
 
 @media screen and (min-width: 1140px) {
@@ -166,15 +176,15 @@ nav {
   }
   .upsell-bg-img {
     left: 0;
-  } 
-   .no-show-press-logo {
-    display: 
-    block;
-    
-}
+  }
+  .press-logo__no-show {
+    display: block;
+  }
   .press {
-   display: flex;
+    margin-top: 130px;
+    margin-bottom: 130px;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-
+}

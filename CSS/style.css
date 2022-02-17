@@ -35,11 +35,10 @@ body {
 }
 .small-text {
   font-size: 20px;
-
   margin-top: 1em;
   margin-bottom: 1.5em;
   font-weight: 300;
-  line-height: 30px;
+  line-height: 32px;
 }
 nav {
   display: flex;
@@ -79,6 +78,9 @@ nav {
   border: 3px solid #ff6141;
   font-weight: 500;
   margin-top: 20px;
+}
+.sign-up-btn:hover {
+  cursor: pointer;
 }
 .hero {
   display: block;
@@ -141,6 +143,7 @@ nav {
   overflow: hidden;
 }
 /* Showcase */
+
 .open-sea-button {
   color: #111111;
 }
@@ -148,9 +151,7 @@ nav {
   width: 290px;
   height: 400px;
   border-radius: 16px;
-
   background-color: #eeeeee;
-  overflow: hidden;
 }
 .card-text-part {
   height: 100px;
@@ -166,7 +167,6 @@ nav {
 }
 .card-text-part_2 {
   align-items: flex-end;
-
   overflow: hidden;
   white-space: nowrap;
 }
@@ -179,11 +179,19 @@ nav {
   padding-right: 10px;
 }
 .showcase-cards-part {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  gap: 40px;
+  margin-top: 50px;
+  display: inline-flex;
+  gap: 35px;
+  padding-right: 32px;
 }
+.showcase-scroll {
+  overflow: scroll;
+}
+.showcase-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 @media screen and (min-width: 1140px) {
   body {
     padding: 70px 80px;
@@ -238,5 +246,11 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+  .showcase-cards-part {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
   }
 }

@@ -110,6 +110,17 @@ nav {
   justify-content: flex-end;
   padding-left: 30px;
 }
+/* Press */
+.press {
+  display: grid;
+  grid-template-columns: 50px 100px;
+  grid-template-rows: 1fr 1fr;
+  overflow: hidden;
+}
+
+.no-show-press-logo {
+  display: none;
+}
 
 @media screen and (min-width: 1140px) {
   body {
@@ -155,5 +166,15 @@ nav {
   }
   .upsell-bg-img {
     left: 0;
-  }
+  } 
+   .no-show-press-logo {
+    display: 
+    block;
+    
 }
+  .press {
+   display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+

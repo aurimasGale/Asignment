@@ -16,7 +16,12 @@ header {
   padding-top: 32px;
 }
 header,
-.hero {
+.hero,
+.press {
   padding-left: 32px;
   padding-right: 32px;
+}
+.press {
+  margin-top: 130px;
+  margin-bottom: 130px;
 }

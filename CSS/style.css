@@ -205,12 +205,13 @@ nav {
 }
 .footer-upsell-text-part__main-text {
   margin-top: 25px;
-  padding-bottom: 15px;
+  padding-bottom: 7px;
   font-size: 56px;
   font-weight: 900;
 }
 .footer-upsell-text-part__small-text {
   margin-top: 0;
+  display: inline;
 }
 hr {
   margin-left: -50px;
@@ -233,7 +234,12 @@ hr {
   overflow: hidden;
   z-index: -1;
 }
-
+.footer-upsell-text-part__small-text-no-show-part {
+  display: none;
+}
+.footer-upsell-sign-up-btn {
+  margin-top: 37px;
+}
 @media screen and (min-width: 1140px) {
   body {
     padding: 70px 80px;
@@ -300,5 +306,35 @@ hr {
   }
   .just-for-boom {
     width: inherit;
+  }
+  hr {
+    display: none;
+  }
+  .footer-upsell {
+    padding: 0;
+    z-index: 0;
+  }
+  .footer-upsell-image-part {
+    display: block;
+    position: static;
+  }
+  .footer-upsell-text-part {
+    width: 46%;
+  }
+  .footer-upsell-text-part__small-text-no-show-part {
+    display: inline;
+  }
+  .footer-upsell-text-part__main-text {
+    margin-bottom: 25px;
+  }
+  .footer-upsell-image-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+  }
+  .footer-upsell-image-part__image {
+    z-index: 3;
   }
 }

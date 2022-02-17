@@ -155,7 +155,7 @@ nav {
 .card-text-part {
   height: 100px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .card-text-part_1,
@@ -178,7 +178,12 @@ nav {
 .eth-img {
   padding-right: 10px;
 }
-
+.showcase-cards-part {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
 @media screen and (min-width: 1140px) {
   body {
     padding: 70px 80px;

@@ -7,6 +7,7 @@ p {
   border: none;
   color: #111111;
 }
+
 h2 {
   font-size: 40px;
   font-weight: 400;
@@ -23,7 +24,9 @@ header {
 header,
 .hero,
 .press,
-.showcase-text-part {
+.showcase-text-part,
+.upsell-text-part,
+.footer-upsell {
   padding-left: 32px;
   padding-right: 32px;
 }
@@ -33,4 +36,15 @@ header,
 }
 .showcase-cards-part {
   padding-left: 32px;
+}
+@media screen and (min-width: 1140px) {
+  header,
+  .hero,
+  .press,
+  .showcase-text-part {
+    padding: 0;
+  }
+  .upsell-text-part {
+    padding-left: 65px;
+  }
 }

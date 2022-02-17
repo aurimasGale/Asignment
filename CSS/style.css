@@ -10,6 +10,20 @@ body {
 .gray {
   color: #999999;
 }
+.smaller-text {
+  font-size: 12px;
+}
+.light {
+  font-weight: 300;
+  font-style: normal;
+  color: #777777;
+}
+.orange {
+  color: #fd8c4c;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-style: normal;
+}
 .colored-text {
   height: 19px;
   font-style: normal;
@@ -121,8 +135,7 @@ nav {
 .press-logo__no-show {
   display: none;
 }
-.press-logo__boom {
-}
+
 .just-for-boom {
   width: 138px;
   overflow: hidden;
@@ -130,6 +143,40 @@ nav {
 /* Showcase */
 .open-sea-button {
   color: #111111;
+}
+.card {
+  width: 290px;
+  height: 400px;
+  border-radius: 16px;
+
+  background-color: #eeeeee;
+  overflow: hidden;
+}
+.card-text-part {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-text-part_1,
+.card-text-part_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.card-text-part_2 {
+  align-items: flex-end;
+
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.eth-part {
+  justify-content: flex-start;
+  display: inline-flex;
+}
+.eth-img {
+  padding-right: 10px;
 }
 
 @media screen and (min-width: 1140px) {

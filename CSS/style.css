@@ -377,4 +377,26 @@ ul {
   .footer-upsell-image-part__image {
     z-index: 3;
   }
+  .footer-no-show {
+    display: block;
+  }
+  .footer-bottom-part {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-nav {
+    width: auto;
+  }
+  .footer-right-mid-part {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+  }
+  .footer-main-part {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+  }
 }

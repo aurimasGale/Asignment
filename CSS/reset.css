@@ -19,9 +19,13 @@ h3 {
   font-size: 20px;
 }
 h4 {
+  color: #555555;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-top: 0;
 }
 header {
   padding-top: 32px;
@@ -37,7 +41,7 @@ footer {
   padding-right: 32px;
 }
 footer {
-  padding-top: 70px;
+  margin-top: 130px;
 }
 .press {
   margin-top: 70px;

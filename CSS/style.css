@@ -245,6 +245,9 @@ hr {
   margin-top: 37px;
 }
 /* Footer */
+.footer-text {
+  margin-top: 15px;
+}
 .social-icons {
   display: flex;
   gap: 20px;
@@ -262,10 +265,11 @@ ul {
   list-style-type: none;
 }
 .footer-right-mid-part {
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 50px;
   display: flex;
   flex-wrap: wrap;
+  gap: 25px;
 }
 .footer-nav {
   width: 45%;
@@ -395,6 +399,7 @@ ul {
     margin: 0;
   }
   .footer-main-part {
+    margin-top: 130px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 150px;

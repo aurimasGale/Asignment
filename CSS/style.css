@@ -13,6 +13,9 @@ body {
 .gray-2 {
   color: #555555;
 }
+.gray-3 {
+  color: #999999;
+}
 .small-text {
   font-size: 20px;
   margin-top: 1em;
@@ -244,11 +247,38 @@ hr {
 /* Footer */
 .social-icons {
   display: flex;
-  gap: 13px;
+  gap: 20px;
 }
 .social-icon {
   font-size: 18px;
   color: #999999;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.footer-right-mid-part {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-nav {
+  width: 45%;
+}
+.footer-nav-item {
+  text-decoration: none;
+  font-weight: 300;
+}
+.footer-no-show {
+  display: none;
+}
+.copyright {
+  font-weight: 300;
 }
 @media screen and (min-width: 1140px) {
   body {

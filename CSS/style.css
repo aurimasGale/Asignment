@@ -3,7 +3,6 @@
 @import "reset.css";
 body {
   font-family: inter;
-  /* padding: 1em; */
   margin: 0;
   overflow: hidden;
 }
@@ -46,7 +45,7 @@ body {
   text-transform: uppercase;
   color: #ff3998;
 }
-
+/* Header */
 nav {
   display: flex;
   flex-direction: row;
@@ -76,18 +75,27 @@ nav {
 .hamburger-btn:hover {
   color: #ff3998;
 }
-
+/* Sign-Up buttons */
 .sign-up-btn {
-  font-size: 20px;
-  padding: 20px 55px;
-  border-radius: 50px;
-  background-color: transparent;
-  border: 3px solid #ff6141;
   font-weight: 500;
+  font-size: 20px;
+  width: 190px;
+  height: 75px;
+  border: double 2px transparent;
+  border-radius: 80px;
+  background-image: linear-gradient(white, white),
+    radial-gradient(circle at top left, #ff495b, #ff6c43, #c4b169);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 .sign-up-btn:hover {
   cursor: pointer;
 }
+.footer-upsell-sign-up-btn {
+  margin-top: 25px;
+  margin-bottom: 12px;
+}
+/* Hero */
 .hero {
   display: block;
   margin-top: 5em;
@@ -241,9 +249,7 @@ hr {
 .footer-upsell-text-part__small-text-no-show-part {
   display: none;
 }
-.footer-upsell-sign-up-btn {
-  margin-top: 37px;
-}
+
 /* Footer */
 .footer-text {
   margin-top: 15px;
@@ -288,6 +294,7 @@ ul {
   body {
     padding: 70px 80px;
   }
+  /* Header */
   .nav-buttons {
     display: flex;
     gap: 35px;
@@ -295,6 +302,7 @@ ul {
   .hamburger-btn {
     display: none;
   }
+  /* Hero */
   .hero {
     display: flex;
     justify-content: space-between;
@@ -320,6 +328,7 @@ ul {
   .hero-image-part__image {
     width: 750px;
   }
+  /* Upsell */
   .upsell {
     margin-top: 0;
   }
@@ -329,6 +338,7 @@ ul {
   .upsell-bg-img {
     left: 0;
   }
+  /* Press */
   .press-logo__no-show {
     display: block;
   }
@@ -339,6 +349,10 @@ ul {
     flex-direction: row;
     justify-content: space-between;
   }
+  .just-for-boom {
+    width: inherit;
+  }
+  /* Showcase */
   .showcase-cards-part {
     padding: inherit;
     width: 100%;
@@ -348,15 +362,13 @@ ul {
   .showcase-scroll {
     overflow: visible;
   }
-  .just-for-boom {
-    width: inherit;
-  }
-  hr {
-    display: none;
-  }
+  /* Footer Upsell */
   .footer-upsell {
     padding: 0;
     z-index: 0;
+  }
+  hr {
+    display: none;
   }
   .footer-upsell-image-part {
     display: block;
@@ -381,6 +393,7 @@ ul {
   .footer-upsell-image-part__image {
     z-index: 3;
   }
+  /* Footer */
   .footer-no-show {
     display: block;
   }
